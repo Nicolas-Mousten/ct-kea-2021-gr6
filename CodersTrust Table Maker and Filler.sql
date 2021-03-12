@@ -291,3 +291,17 @@ insert into `User_Answer_Data`(Time_, User_ID, Question_ID, Type_ID) values #Inp
 ('2020-02-02',10,10,2),
 ('2020-02-02',10,11,2),
 ('2020-02-02',10,12,1);
+
+
+
+update `City_ID` #Update the city attribute so that the zip code's city is changed to Stockholm where Zip_code =2450,
+set City='Stockholm'
+where Zip_Code=2450;
+
+insert into `City_ID`(Zip_Code,City) values
+(1000,'Moscow'); 
+
+DELETE FROM `City_ID` WHERE Zip_Code=1000;
+
+
+
